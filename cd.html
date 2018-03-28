@@ -1,0 +1,119 @@
+<html>
+
+<head><title>credit and debit card payments</title>
+
+<style>
+td{font-size:20;}
+</style>
+
+<script type="text/javascript">
+
+ function validate()
+  {
+  if( document.myForm.Card.value=="-1" )
+        {
+           alert( "Please select your card type!" );
+           return false;
+        }
+  if( document.myForm.CardNo.value == "" )
+         {
+            alert( "Please provide your card no!" );
+            return false;
+         }
+  if( document.myForm.Chn.value == "" )
+         {
+            alert( "Please provide your name!" );
+            return false;
+         }
+  if( document.myForm.Month.value == "-1" )
+         {
+            alert( "Please select month of expiry !" );
+            return false;
+         }
+  if( document.myForm.Year.value == "" )
+         {
+            alert( "Please provide year of expiry!" );
+            return false;
+         }
+  if( document.myForm.Cvv.value == "" )
+         {
+            alert( "Please provide CVV no printed on back of your card!" );
+            return false;
+         }
+   return ( true );
+   }
+   
+</script>
+
+</head>
+
+<body bgcolor="lightyellow">
+<table>
+<tr>
+<td><font size="5">Pay using</font></td>
+<td>
+&nbsp;<img src="photos\images(23).jpg" width="70" height="50" alt="Mastercard">
+</td>
+</td>
+<td>&nbsp;<img src="photos\images(30).jpg" width="70" height="50"  alt="Rupay">
+</td>
+</tr>
+</table>
+For Maestro cards, please enter Expiry Date and CVV no. if available or else ignore and proceed.
+<br>
+<br><br>
+<form action="" name="myForm" onSubmit="return(validate());">
+<table cellpadding="5" cellspacing="5">
+<tr>
+<td>Select Credit Card Option:</td>
+<td>
+<select name="Card">
+<option value="-1" selected>[Choose one]</option>
+<option Value="MasterCard">MasterCard</option>
+<option Value="Visa">Visa</option>
+</select>
+</td>
+</tr><tr></tr>
+<td>Card Number:</td>
+<td><input type="Text" name="CardNo"></td>
+</tr><tr></tr>
+<tr>
+<td>Card Holder Name:</td>
+<td><input type="Text" name="Chn"></td>
+</tr><tr></tr>
+<tr>
+<td>Expiry Date:</td>
+<td>
+<select name="Month">
+<option value="-1" selected>[Choose one]</option>
+<option>Jan</option>
+<option>Feb</option>
+<option>Mar</option>
+<option>Apr</option>
+<option>May</option>
+<option>Jun</option>
+<option>July</option>
+<option>Aug</option>
+<option>Sept</option>
+<option>Oct</option>
+<option>Nov</option>
+<option>Dec</option>
+</select>
+<input type="text" name="Year"></td>
+</tr>
+<tr>
+<td>CVV number:</td>
+<td><input type="text" name="Cvv"></td>
+</tr>
+<tr><td></td>
+<td><input type="submit" Value="Pay Now">&nbsp;<input type="reset" value="Reset"></td>
+</tr>
+<tr><td></td>
+<td><a href="WebBania.html">Cancel</a></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+Products = Quantity | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Hide&seek           =      7;
+Marie                   =      9;
+9897 = Customer contactno. = Customer contactno.Shakti Bhog Atta              =      2;
+Kurkure               =      5;
+Amul cheese          =      65;
+Amul cheese          =      65;
+Pillsbury Atta          =      5;
+Hide&seek           =      10;
+Hide&seek           =      10;
+Hide&seek           =      1;
+Hide&seek           =      10;
+Hide&seek           =      10;
+Kurkure               =      5;
+Hide&seek           =      10;
+Kirpa rice          =      13;

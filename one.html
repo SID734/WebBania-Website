@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+h2{color:blue;}
+h3{color:red;}
+h4{color:darkgreen;}
+
+.button {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #FFFF88;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #888888}
+
+.button:active {
+  background-color: #8888ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+</style>
+<script type="text/javascript">
+function thanks()
+{
+alert("Thank you !! Visit again !!");
+}
+</script>
+</head>
+<body bgcolor="lightyellow">
+<form>
+<h2><legend><u>Payment Info</u></legend></h2>
+<h3>Choose payment metod:</h3>
+<h4>
+<fieldset><button class="button"><a href="nb.html" target="two">Net Banking</a></button>
+</fieldset>
+<fieldset><button class="button" OnClick="thanks();"><font color=blue><u>Cash on Delivery</U></font></button>
+</fieldset>
+<fieldset><button class="button"><a href="cd.html" target="two">Credit/Debit Card</a></button>
+</fieldset></h4>
+<br><br>
+</form>
+</html>
