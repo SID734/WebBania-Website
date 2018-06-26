@@ -1,31 +1,24 @@
 <?php
 
-error_reporting(0);
-
-$con=mysqli_connect("localhost","root","","sample_db");
+$user = 'root';
+	$pass = "";
+	$database = "sample_db";
+	$host = 'localhost';
+	
+	$con = mysqli_connect($host , $user , $pass , $database);
 
 if(mysqli_connect_errno())
 {
 echo"error in connecting to database:".mysqli_connect_error();
 }
 
-$sql="INSERT INTO Customer(Firstname,Middlename,Lastname,Address,Contactno,Email)
-VALUES
-('$_POST[fname]','$_POST[mname]','$_POST[sname]','$_POST[address]','$_POST[contactno]','$_POST[email]')";
+$sql = "INSERT INTO Customer(Firstname,Middlename,Lastname,Address,Contactno,Email) VALUES('$_POST[fname]','$_POST[mname]','$_POST[sname]','$_POST[address]','$_POST[contactno]','$_POST[email]')";
 
-mysql_select_db('sample_db');
-$retval=mysql_query($sql,$con);
+mysqli_query($con,$sql);
 
 if(!mysqli_query($con,$sql))
 {
 die('Error:'.mysqli_error($con));
-}
-
-if(isset($_POST['contactno']))
-{
-$name1=$_POST['contactno'];
-$handle=fopen('products.txt','a');
-fwrite($handle,$name1." = Customer contactno.");
 }
 
 mysqli_close($con);
